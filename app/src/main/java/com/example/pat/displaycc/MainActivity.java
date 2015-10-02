@@ -48,11 +48,15 @@ public class MainActivity extends AppCompatActivity {
         tv1 = (TextView) findViewById(R.id.text_main);
         tv1.setText("Data will appear here");
 
+        CreditCard ccObj = new CreditCard();
+
+        tv1.setText(ccObj.getccInfo());
+        /*
         CreditCard ccObj1 = new CreditCard();
         ccObj1.ccInfo();
         CreditCard ccObj2 = new CreditCard();
         ccObj2.ccInfo();
         CreditCard ccObj3 = new CreditCard();
-        ccObj3.ccInfo();
+        ccObj3.ccInfo(); */
     }
 }
