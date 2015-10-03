@@ -51,6 +51,11 @@ public class MainActivity extends AppCompatActivity {
         CreditCard ccObj = new CreditCard();
 
         tv1.setText(ccObj.getccInfo());
+
+        for(int i = 0; i < ccObj.getccInfo().length(); i++){
+
+
+        }
         /*
         CreditCard ccObj1 = new CreditCard();
         ccObj1.ccInfo();

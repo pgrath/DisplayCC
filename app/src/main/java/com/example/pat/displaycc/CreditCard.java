@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class CreditCard {
 
      public  String getccInfo() throws IOException {
-         String allData = null;
+
          String issuer, name, cardnum, expire;
          Double bal, limit;
          List<String> ccData = new ArrayList<String>();
@@ -24,8 +24,10 @@ public class CreditCard {
          return ccData.toString();
     }
 
-    public class makeCCprofile{
-        // add code and stuffS
+    public class ccProfile{
+        String issuer, name, cardnum, expire;
+        Double bal, limit;
+
     }
 }
 //tes
