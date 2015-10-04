@@ -1,6 +1,8 @@
 package com.example.pat.displaycc;
 
 
+import android.widget.Toast;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -24,33 +26,18 @@ public class CreditCard {
                 ccArray().add(urlScn.nextLine() + "\n");
             }
 
-        }catch (MalformedURLException IOe){
-
+        }catch (MalformedURLException URLe){
+            //I dont know, toast or something. do it
 
         }
-
-
+        catch (IOException IOe){
+            //same thing
+        }
+        return ccInfo;
     }
 
-     public  String getccInfo() throws IOException {
+      
 
-         List<String> ccData = new ArrayList<String>();
-        //get cc info
-        URL urlDat = new URL("https://web.njit.edu/~halper/it114/l2d.txt");
-         Scanner urlScn = new Scanner(urlDat.openStream());
-         while (urlScn.hasNext()){
-             ccData.add(urlScn.nextLine() + "\n");
-         }
-         /*
-         int count = 0;
-         CreditCard creditObj1 = new CreditCard();
-         for(count <=5){
-             count++;
-
-         } */
-
-         return ccData.toString();
-    }
 
     public class ccProfile{
         String issuer, name, cardnum, expire;

@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         //create objects to det data and make profiles
         CreditCard ccObj = new CreditCard();
 
-        while(ccObj.getccInfo().hasNext())
 
         tv1.setText(ccObj.getccInfo());
 
