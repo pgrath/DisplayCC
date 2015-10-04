@@ -48,14 +48,14 @@ public class MainActivity extends AppCompatActivity {
         tv1 = (TextView) findViewById(R.id.text_main);
         tv1.setText("Data will appear here");
 
+        //create objects to det data and make profiles
         CreditCard ccObj = new CreditCard();
+
+        while(ccObj.getccInfo().hasNext())
 
         tv1.setText(ccObj.getccInfo());
 
-        for(int i = 0; i < ccObj.getccInfo().length(); i++){
 
-
-        }
         /*
         CreditCard ccObj1 = new CreditCard();
         ccObj1.ccInfo();
