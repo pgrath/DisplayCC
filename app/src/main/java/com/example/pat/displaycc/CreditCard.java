@@ -26,7 +26,7 @@ public class CreditCard {
                 ccArray().add(urlScn.nextLine() + "\n");
             }
             urlScn.close();
-            urlDat.close();
+
 
         }catch (MalformedURLException URLe){
             //I dont know, toast or something. do it
@@ -34,10 +34,8 @@ public class CreditCard {
         }
         catch (IOException IOe){
             //same thing
-        }finally {
-            urlDat.close();
-            urlScn.close();
         }
+
 
 
         return ccInfo;
@@ -99,4 +97,3 @@ public class CreditCard {
         }
     }
 }
-//tes
