@@ -11,42 +11,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.net.*;
 
-public class CreditCard {
-
-    //set up method to get and return data as arraylist
-    public ArrayList<String> ccArray(){
-        ArrayList<String> ccInfo = new ArrayList<String>();
-
-        //array set up. time to get data
-        //DONT FORGET TO CHANGE URL TO INPUT FROM EDITTEXT YOU FOOL
-        try {
-            URL urlDat = new URL("https://web.njit.edu/~halper/it114/l2d.txt");
-            Scanner urlScn = new Scanner(urlDat.openStream());
-            while (urlScn.hasNext()){
-                ccArray().add(urlScn.nextLine() + "\n");
-            }
-            urlScn.close();
-
-
-        }catch (MalformedURLException URLe){
-            //I dont know, toast or something. do it
-
-        }
-        catch (IOException IOe){
-            //same thing
-        }
-
-
-
-        return ccInfo;
-    }
-
-
-
-
-    public class ccProfile{
-        String issuer, name, cardnum, expire;
-        Double bal, limit;
+    class ccProfile{
+        private String issuer, name, cardnum, expire;
+        private Double bal, limit;
 
         public String getIssuer() {
             return issuer;
@@ -96,4 +63,4 @@ public class CreditCard {
             this.limit = limit;
         }
     }
-}
+
