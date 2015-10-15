@@ -1,16 +1,5 @@
 package com.example.pat.displaycc;
 
-
-import android.widget.Toast;
-
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.net.*;
-
     class ccProfile{
         private String issuer, name, cardnum, expire;
         private Double bal, limit;
@@ -62,5 +51,7 @@ import java.net.*;
         public void setLimit(Double limit) {
             this.limit = limit;
         }
+
+
     }
 
